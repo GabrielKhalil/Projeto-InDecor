@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>InDecor</title>
     <!-- Text font -->
     <link rel="stylesheet" href="/css/styles.css" />
@@ -35,7 +38,12 @@
         <form>
           <div class="form-group">
             <label for="name">Nome</label>
-            <input type="text" name="name" class="teste" placeholder="Digite seu nome" />
+            <input
+              type="text"
+              name="name"
+              class="teste"
+              placeholder="Digite seu nome"
+            />
           </div>
 
           <div class="form-group">
@@ -43,7 +51,7 @@
             <input
               type="email"
               name="email"
-              placeholder="Digite seu mlehor e-mail"
+              placeholder="Digite seu melhor e-mail"
             />
           </div>
 
@@ -67,34 +75,104 @@
       </div>
     </header>
 
-    <section id="key-benefits">
-      <h2>O que você vai aprender:</h2>
+      <section id="key-benefits">
+        <h2 data-aos="fade-up">O que você vai aprender:</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <div id="benefit-1" class="benefit-img" data-aos="flip-left"" data-aos-delay="150"></div>
+            <p>
+              <strong>Inspiração nas Tendências de Decoração: </strong> <br> Descubra as últimas tendências em design de interiores para criar espaços únicos e elegantes.
+            </p>
 
-      <div class="benefits">
-        <div class="benefit">
-          <div id="benefit-1" class="benefiti-img"></div>
-          <p>
-            Alguma coisa muito legal, que vai fazer a diferença na vida do
-            participante.
-          </p>
+          </div>
+          <div class="benefit">
+            <div id="benefit-2" class="benefit-img" data-aos="flip-left"" data-aos-delay="250"></div>
+            <p>
+              <strong>Organização Espacial Eficiente: </strong> <br> Aprenda a otimizar espaços pequenos e grandes para ambientes acolhedores e bem planejados.
+              
+            </p>
+          </div>
+          <div class="benefit">
+            <div id="benefit-3" class="benefit-img" data-aos="flip-left"" data-aos-delay="350" ></div>
+            <p>
+              <strong>Decoração DIY Criativa: </strong> <br> Explore o mundo do faça você mesmo (DIY) aplicado à decoração e crie peças personalizadas.
+              
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" data-aos="flip-left" data-aos-delay="350">
+        <div id="address">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div id="address-details">
+            <p>Rua dos Tucunarés, 500</p>
+            <p>Jardim Maria Martha</p>
+            <p>Abertura: 14 horas</p>
+          </div>
         </div>
 
-        <div class="benefit">
-          <div id="benefit-1" class="benefiti-img"></div>
+        <div id="about-location">
+          <h3>Local de destaque</h3>
           <p>
-            Alguma coisa muito legal, que vai fazer a diferença na vida do
-            participante.
+            O evento será realizado em um local prestigiado pelos amantes de Desing de Interiores, onde teremos exemplos de vários ambientes, tanto internos como externos.
           </p>
+        </div>
+      </section>
+
+      <section id="details" data-aos="zoom-in">
+        <div class="detail" id="detail-1">
+          <img src="/img/hrz-3.jpg" alt="sala decorada">
+          <div class="detail-description">
+            <h3>Conheça os ambientes que você vai aprender a decorar</h3>
+          </div>
         </div>
 
-        <div class="benefit">
-          <div id="benefit-1" class="benefiti-img"></div>
-          <p>
-            Alguma coisa muito legal, que vai fazer a diferença na vida do
-            participante.
-          </p>
+        <div class="detail" id="detail-2">
+          <div class="detail-description">
+            <h3>Detalhes</h3>
+            <ul>
+              <li>Posicionamento</li>
+              <li>Aproveitamento de espaço</li>
+              <li>Combinação de cores</li>
+              <li>Organização</li>
+              <li>E muito mais...</li>
+            </ul>
+          </div>
+          <img src="/img/hrz-4.jpg" alt="sala de jantar">
         </div>
-      </div>
-    </section>
+
+        <div class="detail" id="detail-3">
+          <img src="/img/hrz-5.jpg" alt="sala tons escuros">
+          <div class="detail-description">
+            <h3>Objetos</h3>
+            <ul>
+              <li>Cadeiras</li>
+              <li>Mesas</li>
+              <li>Espelhos</li>
+              <li>Cortinas</li>
+              <li>E muito mais...</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" data-aos="zoom-in-left">
+        <h3>Gostou? Então se inscreva: </h3>
+        <button class="btn">Solicitar Inscrição</button>
+      </section>
+
+      <iframe  width="100%""
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.4179972962843!2d-49.96946342376294!3d-22.1862156125185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd692a2c04863%3A0x51e852e7986fc34c!2sMar%C3%ADlia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1689949492701!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <footer id="footer">
+        <h3>InDecor</h3>
+        <p>A evolução da decoração de interiores</p>
+        <p><span>Entre em contato: </span>contato@idecor.com.br </p>
+        <p><span>Ou pelo telefone: </span>+55 (14)99999-9999</p>
+        <p><span>Endereço:</span> Rua dos Tucunarés, 500, Marília Shopping</p>
+        <p><span>Nome da loja: </span>InDecor design de interiores</p>
+      </footer>
+      <script src="script.js"></script>
   </body>
 </html>
