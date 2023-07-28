@@ -23,7 +23,9 @@
     />
   </head>
   <body>
-    <header id="event-description">
+    <header id="event-description" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <div id="disclaimer">
         <h2>InDecor</h2>
         <p class="about-event">
@@ -36,7 +38,7 @@
       <div id="subscription-form">
         <p>Preencha o formulário para receber os detalhes do evento</p>
         <form>
-          <div class="form-group">
+          <div class="form-group" data-aos="fade-down" data-aos-delay="300">
             <label for="name">Nome</label>
             <input
               type="text"
@@ -46,7 +48,7 @@
             />
           </div>
 
-          <div class="form-group">
+          <div class="form-group" data-aos="fade-down" data-aos-delay="400">
             <label for="email">E-mail</label>
             <input
               type="email"
@@ -55,12 +57,12 @@
             />
           </div>
 
-          <div class="form-group">
+          <div class="form-group" data-aos="fade-down" data-aos-delay="500">
             <label for="phone">Telefone</label>
             <input type="text" name="phone" placeholder="Número de whatsapp" />
           </div>
 
-          <div class="form-group">
+          <div class="form-group" data-aos="fade-down" data-aos-delay="600">
             <label for="interest">Principal Interesse</label>
             <select name="interest">
               <option value="" disabled selected>Selecione</option>
@@ -70,7 +72,7 @@
               <option value="other">Outros</option>
             </select>
           </div>
-          <input type="submit" class="btn" value="Quero me inscrever" />
+          <input type="submit" class="btn" value="Quero me inscrever" data-aos="fade-down" data-aos-delay="600" />
         </form>
       </div>
     </header>
@@ -102,7 +104,7 @@
         </div>
       </section>
 
-      <section id="location" data-aos="flip-left" data-aos-delay="350">
+      <section id="location" data-aos="flip-right" data-aos-delay="350">
         <div id="address">
           <i class="bi bi-geo-alt-fill"></i>
           <div id="address-details">
@@ -120,15 +122,15 @@
         </div>
       </section>
 
-      <section id="details" data-aos="zoom-in">
-        <div class="detail" id="detail-1">
+      <section id="details">
+        <div class="detail" id="detail-1" data-aos="flip-left" data-aos-delay="350">
           <img src="/img/hrz-3.jpg" alt="sala decorada">
           <div class="detail-description">
             <h3>Conheça os ambientes que você vai aprender a decorar</h3>
           </div>
         </div>
 
-        <div class="detail" id="detail-2">
+        <div class="detail" id="detail-2" data-aos="flip-right" data-aos-delay="350">
           <div class="detail-description">
             <h3>Detalhes</h3>
             <ul>
@@ -142,7 +144,7 @@
           <img src="/img/hrz-4.jpg" alt="sala de jantar">
         </div>
 
-        <div class="detail" id="detail-3">
+        <div class="detail" id="detail-3" data-aos="flip-left" data-aos-delay="350">
           <img src="/img/hrz-5.jpg" alt="sala tons escuros">
           <div class="detail-description">
             <h3>Objetos</h3>
