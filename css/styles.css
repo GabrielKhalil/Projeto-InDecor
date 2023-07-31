@@ -152,15 +152,15 @@ input::placeholder {
 }
 
 #benefit-1 {
-  background-image: url(../img/sqr-1.jpg);
+  background-image: url(./img/sqr-1.jpg);
 }
 
 #benefit-2 {
-  background-image: url(../img/sqr-2.jpg);
+  background-image: url(./img/sqr-2.jpg);
 }
 
 #benefit-3 {
-  background-image: url(../img/sqr-3.jpg);
+  background-image: url(./img/sqr-3.jpg);
 }
 
 #location {
