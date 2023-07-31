@@ -73,7 +73,7 @@
 
 input::placeholder {
   color: var(--text-secondary);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .form-group label {
@@ -97,7 +97,7 @@ input::placeholder {
   transition: 300ms;
   transition-timing-function: cubic-bezier(0.4,0,1,1);
   color: var(--text-secondary);
-/* } * coloca efeito ao passar mouse em cima!!/ */
+} */
 
 .btn {
   background-color: var(--primary);
@@ -115,6 +115,7 @@ input::placeholder {
 .btn:hover {
   opacity: 1;
 }
+
 #key-benefits h2 {
   background-color: var(--secondary);
   text-align: center;
@@ -123,6 +124,7 @@ input::placeholder {
   font-weight: 500;
   display: flex;
 }
+
 .benefits {
   display: flex;
   justify-content: space-around;
@@ -306,9 +308,11 @@ input::placeholder {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
@@ -316,7 +320,8 @@ input::placeholder {
 
 /* Aplicando a animação ao botão */
 .button-pulse {
-  animation: pulse 2s infinite; /* A animação dura 2 segundos e repete infinitamente */
+  animation: pulse 2s infinite;
+  /* A animação dura 2 segundos e repete infinitamente */
   /* Outros estilos do botão, como cores, tamanho, bordas, etc. */
   background-color: #4caf50;
   color: white;
@@ -332,9 +337,11 @@ input::placeholder {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.03);
   }
+
   100% {
     transform: scale(1);
   }
@@ -342,7 +349,8 @@ input::placeholder {
 
 /* Aplicando a animação ao botão */
 .btn {
-  animation: pulse 2s infinite; /* A animação dura 2 segundos e repete infinitamente */
+  animation: pulse 2s infinite;
+  /* A animação dura 2 segundos e repete infinitamente */
   /* Outros estilos do botão, como cores, tamanho, bordas, etc. */
   color: white;
   font-size: 16px;
@@ -350,4 +358,108 @@ input::placeholder {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* CSS for screens with a maximum width of 450px */
+@media (max-width: 450px) {
+
+  /* Event form */
+  #event-description {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #disclaimer {
+    padding: 2em;
+  }
+
+  #disclaimer h2 {
+    margin-bottom: 0.5em;
+  }
+
+  #subscription-form {
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+
+  /* Benefits section */
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    width: auto; /* "width: auto" may not be necessary as flex-direction is column */
+    padding: 2em;
+  }
+
+  .benefit {
+    max-width: 100%; /* This may not be needed, as "max-width: 100%" is the default */
+    margin-bottom: 2em;
+  }
+
+  /* Event location */
+  #location {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  #address {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%; /* This may not be needed, as "max-width: 100%" is the default */
+  }
+
+  #address i {
+    margin: 0.3em 0;
+  }
+
+  #about-location {
+    order: 1;
+    max-width: 100%; /* This may not be needed, as "max-width: 100%" is the default */
+  }
+
+  #about-location h3 {
+    margin-bottom: 0;
+  }
+
+  #about-location p {
+    display: none;
+  }
+
+  /* Event details container */
+  .detail {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0; /* "gap: 0" may not be necessary, as it is the default value */
+  }
+
+  .detail img {
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  #detail-1 img {
+    display: none;
+  }
+
+  .detail-description {
+    padding: 0;
+  }
+
+  #detail-3 img {
+    order: 2;
+  }
+
+  #detail-3 .detail-description {
+    order: 1;
+  }
+
+  /* Call to Action Section */
+  #cta .btn {
+    width: 80%;
+  }
+
+  #cta{
+    text-align: center;
+  }
 }
