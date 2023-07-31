@@ -15,7 +15,7 @@
 
 #event-description {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/hrz-5.jpg");
+    url("./img/hrz-5.jpg");
   background-position: center;
   background-size: cover;
   height: 85vh;
@@ -166,7 +166,7 @@ input::placeholder {
 #location {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/hrz-1.jpg");
+    url("./img/hrz-1.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -256,7 +256,7 @@ input::placeholder {
 #cta {
   height: 300px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/hrz-1.jpg");
+    url("./img/hrz-1.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
