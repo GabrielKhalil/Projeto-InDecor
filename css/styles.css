@@ -360,6 +360,11 @@ input::placeholder {
   cursor: pointer;
 }
 
+#cop{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 @media (max-width: 450px) {
   /* Event form */
   #event-description {
