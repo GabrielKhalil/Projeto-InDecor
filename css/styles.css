@@ -361,9 +361,16 @@ input::placeholder {
   cursor: pointer;
 }
 
-@media (min-width: 1366px){
+@media (max-width: 1920px){
   #subscription-form{
     max-width: 22%;
+  }
+}
+
+@media (max-width: 1050px){
+  .benefits{
+    display: flex;
+    flex-direction: column;
   }
 }
 
