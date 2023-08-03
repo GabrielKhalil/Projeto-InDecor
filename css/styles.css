@@ -367,14 +367,27 @@ input::placeholder {
   }
 }
 
-@media (max-width: 1050px){
-  .benefits{
-    display: flex;
+@media (max-width: 1300px){
+  #event-description {
     flex-direction: column;
+    height: auto;
+  }
+
+  #disclaimer {
+    padding: 2em;
+  }
+
+  #disclaimer h2 {
+    margin-bottom: 0.5em;
+  }
+
+  #subscription-form {
+    max-width: 30%;
+    margin-bottom: 2em;
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 975px) {
   /* Event form */
   #event-description {
     flex-direction: column;
